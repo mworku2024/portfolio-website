@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Portfolio</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 15px;
+
+        }
+
+
+        .nav-bar {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .hero span {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid black;
+
+        }
+
+        li {
+            list-style-type: none;
+
+        }
+
+        .hero {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px;
+            min-height: 80vh;
+            background-color: #0f2027;
+            color: white;
+            gap: 10px;
+
+            
+        }
+        @keyframes fadeIn{
+from{
+opacity:0;
+transform: translateY(20px);
+}
+to{
+opacity:1;
+transform: translateY(0);
+}
+}
+        .hero h2 {
+            font-size: 40px;
+           text-align: center;
+                     color:#f4f7f9;
+animation: fadeIn 2s ease-in-out;
+        }
+            
+            
+        .hero h3 {
+            font-size: 28px;
+            color: #00aaff;
+             position: relative;
+             color:#00aaff;
+animation: fadeIn 8s ease-in-out;
+   
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding:  20px;
+            background-color: #00aaff;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .card {
+          flex: 1 1 300px;
+            background: gold;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+        }
+
+       
+
+       .project .container{
+        display: flex;
+        flex-direction: row;
+       }
+
+        .container {
+            width: 70%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            
+            align-items: center;
+
+        }
+
+        .header {
+            background: #0f2027;
+        }
+
+        .card:hover
+        {
+            transform: translateY(-10px);
+            transition: 0.5s;
+
+
+        }
+        .project{
+            padding: 60px 0;
+            display: flex;
+            gap: 20px;
+            
+         
+        }
+
+        .container1 {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar a:hover {
+            background-color: rgb(4, 7, 7);
+            transform: translateY(-0.3px);
+        }
+        .skills{
+            text-align: center;
+            padding: 60px 0;
+            color: white;
+        }
+        .contact{
+            text-align: center;
+            color: white;
+        }
+        footer{
+            background-color: grey;
+            text-align: center;
+            
+        }
+        .skills-list{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .skills-list span{
+            background: #00aaff;
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container1">
+            <h1>Michael Portfolio</h1>
+
+            <Nav>
+                <ul class="nav-bar">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+    </header>
+    </Nav>
+    </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <section class="hero">
+                <h2>Hi, I'm Michael</h2>
+                <h3>Front-end developer</h3>
+                <p>
+                    building clean responsive web pages
+                </p>
+                <p>
+                    I specialize in html,css and JavaScript
+                </p>
+                <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="projects" class="project container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Resposive portfolio built with HTML and CSS.</p>
+        </div>
+        <div class="card">
+           <h3>Landing Page</h3>
+           <p>Modern Landing page using Flexbox</p>
+        </div>
+        <div class="card">
+           <h3>Inspiration Website</h3>
+           <p>Motivtional website design project.</p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+
+        <h2>Skills</h2>
+        
+        <div class="skills-list">
+        
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Flexbox</span>
+        <span>Responsive Design</span>
+        <span>JavaScript (Learning)</span>
+        
+        </div>
+        
+        </section>
+        <section id="contact" class="contact">
+
+            <h2>Contact</h2>
+            
+            <p>Email: workumichael@gmail.com</p>
+            
+            </section>
+   
+            <footer class="footer">
+
+                <p>© 2026 Michael Worku</p>
+                
+                </footer>
+</body>
+
+</html>
